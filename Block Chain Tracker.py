@@ -48,7 +48,6 @@ app = MyApplication(master=root)
 app.mainloop()
 
 
-# Assuming the image file is in the same directory as your script:
 icon_path = os.path.join(os.path.dirname(__file__), 'blockchain.png')
 
 
@@ -182,10 +181,10 @@ entry_price.grid(row=5, column=1, padx=10, pady=10)
 update_button = tk.Button(root, text='Update', bg='#F9A03F', fg='#FFFFFF', relief='flat', command=animate_button)
 update_button.pack(pady=20)
 
-#Schedule the first update
+
 root.after(0, update_data)
 
-#Start the main loop
+
 root.mainloop()
 
 
